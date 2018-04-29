@@ -2,7 +2,7 @@
   "name": "photowall",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://zozzycode.com/zozzy/react",
+  "homepage": "http://zozzycode.com/zozzy/photowall",
   "dependencies": {
     "firebase": "^4.8.2",
     "prop-types": "^15.5.7",
