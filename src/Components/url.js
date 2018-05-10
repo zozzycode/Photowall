@@ -1,4 +1,5 @@
-const prodUrl = "/zozzy/photowall";
+// const prodUrl = "/zozzy/photowall";
+const prodUrl = "";
 const localhostUrl = "";
 
 const url = process.env.NODE_ENV === "production" ? prodUrl : localhostUrl;

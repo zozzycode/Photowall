@@ -1,7 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./styles/stylesheet.css";
-import { BrowserRouter } from "react-router-dom"; // builds URL
+// import { BrowserRouter } from "react-router-dom"; // builds URL
+import { HashRouter } from "react-router-dom"; // builds URL
 import { createStore, applyMiddleware } from "redux"; // Creating Store, async requests to DB
 import rootReducer from "./redux/reducer"; // State changer
 import { Provider } from "react-redux"; //  passes state to the App component
@@ -18,9 +19,9 @@ const store = createStore(
 ReactDOM.render(
   // ReactDOM.render(what, where)
   <Provider store={store}>
-    <BrowserRouter>
+    <HashRouter>
       <App />
-    </BrowserRouter>
+    </HashRouter>
   </Provider>,
   document.getElementById("root")
 ); // where
